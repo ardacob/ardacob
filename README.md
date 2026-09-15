@@ -1,16 +1,14 @@
-## Hi there 👋
+# Hi, I'm Arda 👋
 
-<!--
-**ardacob/ardacob** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+I build practical self-hosted setups, personal cloud systems and hardware-focused projects.
 
-Here are some ideas to get you started:
+### Current project
+☁️ **Mac mini Personal Cloud**
+Docker + File Browser + Tailscale + external NVMe storage, with iPhone remote access and HEIC troubleshooting.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+### Interests
+- 🍎 macOS & Apple Silicon
+- 🐳 Docker & self-hosting
+- ☁️ Personal cloud / NAS
+- 🏠 Homelab
+- 🔧 Hardware & troubleshooting
