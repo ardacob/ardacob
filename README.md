@@ -1,3 +1,200 @@
+<p align="center"><a href="#turkce">🇹🇷 Türkçe</a> · <a href="#english">🇬🇧 English</a></p>
+
+<a id="turkce"></a>
+
+# Merhaba, ben Arda 👋
+
+Pratik uygulamalar, yaratıcı araçlar ve kişisel bulut sistemleri geliştiriyorum. Çalışmalarım Apple ekosistemini, platformlar arası bulut geliştirmeyi, kendi sunucumda çalışan sistemleri ve donanım denemelerini kapsıyor.
+
+Bu projeleri **Codex** desteğiyle geliştiriyor; kaynak kodunu, arayüzleri, derlemeleri, testleri ve dokümantasyonu adım adım iyileştiriyorum.
+
+## Projelerime genel bakış
+
+| Proje | Odak | Mevcut durum |
+| --- | --- | --- |
+| 🌙 Lunoud | Özel geliştirme projesi | Private depo |
+| 🔄 Convert | macOS ve iPhone için cihaz üzerinde dosya dönüştürme | Deneme sürümleri mevcut |
+| 🎬 Kadrena | macOS, iPhone ve iPad için video düzenleme | Geliştirme derlemeleri |
+| 🎨 LumaStudio | macOS için katmanlı görsel düzenleme | Geliştirme derlemeleri |
+| 🎵 WAMP | Winamp'tan esinlenen yerel müzik oynatıcı | macOS derlemesi ve web sürümü |
+| ☁️ Mac mini Personal Cloud | Kendi sunucumda depolama ve uzaktan dosya erişimi | Herkese açık kurulum rehberi ve betikler |
+| 📱 Galaxy C5 ROM | Android 9 / LineageOS 16 derlemesi | Derleme sürüyor; telefonda doğrulanmadı |
+| 💾 Harici macOS ve NVMe araştırması | Depolama, disk kutuları ve Mac uyumluluğu | Donanım araştırması |
+
+## 🌙 Lunoud
+
+Lunoud, özel olarak geliştirilen bir projedir.
+
+## 🔄 Convert — çevrimdışı dosya dönüştürme
+
+[Convert](https://github.com/ardacob/convert-offline), **Swift ve SwiftUI** ile geliştirdiğim bir **macOS ve iPhone** dosya dönüştürme uygulamasıdır. Dönüştürme, dosyalar bir dönüştürme sunucusuna yüklenmeden cihaz üzerinde yapılır.
+
+### Özellikler
+
+- Dosya seçme, hedef biçim önerileri, önizleme ve sonuçları kaydetme/paylaşma.
+- Görsel ve PDF dönüştürme.
+- İşletim sisteminin desteklediği çerçeveler ve kodeklerle belirli ses/video dönüşümleri.
+- iPhone'da Fotoğraflar veya Dosyalar üzerinden **HEIC → JPG** dahil toplu görsel dönüştürme.
+- Birden fazla dönüştürülmüş görseli birlikte paylaşma.
+- Saydamlığı ayarlanabilen Açık, Koyu ve Liquid Glass temaları.
+- Tema tercihleri ve uygulama bilgileri için ayrı bir Ayarlar ekranı.
+
+### Mevcut durum
+
+macOS ve iPhone için deneme sürümleri ve kaynak kodu mevcut. Başlangıçtaki daha geniş platform fikri, yerel Apple uygulamalarına dönüştü.
+
+Biçim kapsamı, giriş dosyasına ve sistem kodeklerine bağlıdır. MP3 çıktısı, birçok ofis/özel dosya biçimi ve Windows/Android uygulamaları mevcut yayımlanmış sürüme dahil değildir.
+
+[Kaynak kodu](https://github.com/ardacob/convert-offline) · [Sürümler](https://github.com/ardacob/convert-offline/releases) · [Biçim kapsamı](https://github.com/ardacob/convert-offline/blob/main/FORMAT_SCOPE.md)
+
+## 🎬 [Kadrena](https://github.com/ardacob/kadrena) — video düzenleme
+
+**Kadrena**, CapCut ve Clipchamp gibi kolay kullanılan zaman çizelgesi tabanlı editörlerden esinlenerek geliştirdiğim **macOS, iPhone ve iPad** video düzenleme projesidir.
+
+Amacım günlük düzenlemeleri kolaylaştırmak: yerel video ve sesleri içe aktarmak, klipleri sıralamak, kesmek, müzik eklemek ve sonucu dışa aktarmak.
+
+### Geliştirilen özellikler
+
+- Yerel dosyalardan video ve ses içe aktarma.
+- Zaman çizelgesinde düzenleme, klip taşıma, kırpma ve bölme.
+- Müzik/ses izleri ve soldurma kontrolleri.
+- En-boy oranı seçimi.
+- Tam ekran önizleme.
+- Proje kaydetme.
+- **MP4, MOV ve M4V** dışa aktarma.
+- iPhone ve iPad için dokunmatik kullanıma uygun zaman çizelgesi.
+
+### Mevcut durum
+
+macOS ve mobil geliştirme derlemeleri hazırlandı. iPhone sürümü fiziksel bir cihaza kurulup başlatıldı.
+
+Daha geniş biçim desteği bir geliştirme hedefi olmaya devam ediyor; mevcut proje her video biçiminde çıktı verme sözü sunmuyor.
+
+## 🎨 [LumaStudio](https://github.com/ardacob/lumastudio) — katmanlı görsel düzenleme
+
+**LumaStudio**, Photoshop'un katmanlı çalışma mantığından ve yumuşak, Apple tarzı bir arayüzden esinlenerek geliştirdiğim **macOS** görsel düzenleyicisidir.
+
+### Geliştirilen özellikler
+
+- Boş tuval oluşturma.
+- Görsel, metin, şekil ve fırça katmanları ekleme.
+- Katmanları taşıma, sıralama, gizleme, çoğaltma ve silme.
+- Katman opaklığını ayarlama.
+- Düzenlenebilir **`.luma` projelerini** kaydetme ve yeniden açma.
+- Birleştirilmiş görseli dışa aktarma.
+- Sistem, Açık ve Koyu görünüm ayarları.
+- Kalıcı varsayılan çıktı biçimi ve kalite tercihleri.
+
+### Mevcut durum
+
+**Apple Silicon ve Intel Mac'ler** için geliştirme derlemeleri hazırlandı. Geliştirme sırasında katmanları kaydetme/yeniden açma ve birleştirilmiş görseli dışa aktarma doğrulandı.
+
+Tam Photoshop uyumluluğu henüz mevcut özellikler arasında değil. Maskeler, gelişmiş seçim araçları ve katmanlı PSD alışverişi gelecekteki çalışmalar arasında; mevcut PSD çıktısı düzleştirilmiş görsel üretir.
+
+## 🎵 [WAMP](https://github.com/ardacob/wamp) — klasik müzik oynatıcı
+
+**WAMP**, hem macOS uygulaması hem de tarayıcı sürümü bulunan, **Winamp'tan esinlenen müzik oynatıcım**.
+
+### Geliştirilen özellikler
+
+- Klasik koyu metalik arayüz ve yeşil ekran.
+- Çalma listesi ve tanıdık oynatma kontrolleri.
+- Yerel ses dosyası seçme.
+- Web çalma listesine sürükleyip bırakma.
+- Kişisel ses dosyalarını bir sunucuya yüklemeden oynatma.
+- Web uygulamasının yanında çevrimdışı HTML sürümü.
+
+### Mevcut durum
+
+macOS derlemesi **Apple Silicon ve Intel Mac'ler** için hazırlandı; dosya seçme ve oynatma macOS'ta test edildi. Web sürümü de mevcut.
+
+[Web oynatıcıyı aç](https://wamp-klasik-mp3-calar.sykenix.chatgpt.site)
+
+## ☁️ Mac mini Personal Cloud — kendi sunucumda depolama
+
+[Mac mini Personal Cloud](https://github.com/ardacob/mac-mini-personal-cloud), aşağıdaki bileşenlerle kurulmuş gerçek bir kişisel bulut ve medya depolama sistemini belgeler:
+
+**Apple Silicon Mac mini + harici NVMe SSD + Docker + File Browser + Tailscale + NAStool**
+
+### Projenin kapsamı
+
+- iPhone/iPad'den uzaktan dosya erişimi ve yükleme.
+- Router portlarını genel internete açmadan Tailscale ile erişim.
+- Tek fiziksel SSD'yi dosya yönetimi ve medya servisleri arasında paylaşma.
+- macOS'ta NTFS salt okunur davranışını teşhis etme ve APFS'e geçiş.
+- Siyah, kısmi veya hatalı HEIC önizlemelerini araştırma.
+- FFmpeg ve macOS `sips` dönüştürme sonuçlarını karşılaştırma.
+- Önizleme/önbellek sorunlarını giderme.
+- NAStool için DOM tabanlı Türkçe arayüz yaklaşımı.
+- Yedekleme, geri dönüş ve sorun giderme dokümantasyonu.
+
+### Hazırlanan kaynaklar
+
+Depoda Docker yapılandırma örnekleri, kurulum rehberleri; depolama teşhisi, klasör oluşturma, HEIC önizleme yenileme, yedekleme ve servis doğrulama için yardımcı betikler bulunur.
+
+NAStool'un kaynak projesi arşivlenmiştir; rehber bu bileşeni eski bir yazılım olarak ele alır.
+
+[Depo ve Türkçe rehber](https://github.com/ardacob/mac-mini-personal-cloud) · [İngilizce rehber](https://github.com/ardacob/mac-mini-personal-cloud/blob/main/README_EN.md)
+
+## 📱 Galaxy C5 — özel Android ROM çalışması
+
+**Samsung Galaxy C5 SM-C5000** için **Android 9 / LineageOS 16** derlemesi üzerinde çalışıyorum.
+
+### Yapılan çalışmalar
+
+- Ubuntu tabanlı Android derleme ortamı hazırlama.
+- LineageOS, cihaz, kernel ve vendor kaynaklarını indirme ve belirli sürümlere sabitleme.
+- Eski Android derleme araçlarının uyumluluk sorunlarını çözme.
+- Aygıt ağacı derleyicisindeki sembol çakışmasını düzeltme.
+- Recovery imajının adres argümanlarını düzeltme.
+- Recovery imajı derleme; boyut, başlık ve adres yerleşimini kontrol etme.
+- Stok firmware'e dönüş paketi ve ortak depolama yedeği hazırlama.
+- Linux derleme ortamını Windows dizüstü bilgisayara taşıma hazırlığı.
+
+### Mevcut durum
+
+Recovery, derleme düzeyindeki kontrolleri geçti ancak **telefonda test edilmedi**. Tam ROM derlemesi devam ediyor; bootloader/firmware uyumluluğu henüz çözülmedi.
+
+Telefona özel recovery veya ROM yüklenmedi. Derleme doğrulaması, cihazın başarıyla açıldığı anlamına gelmez.
+
+## 💾 Harici macOS ve NVMe — donanım araştırması
+
+Uygulamaların yanında **Mac mini** için pratik depolama kurulumlarını araştırıyorum. Buna **Crucial T500 NVMe SSD**, harici disk kutuları ve harici diskten macOS başlatma olasılığı da dahil.
+
+### Araştırılan konular
+
+- USB 3.1 Gen 2 ile USB4/Thunderbolt disk kutusu seçenekleri.
+- NVMe boyut ve arayüz uyumluluğu.
+- APFS biçimlendirme ve depolama düzeni.
+- Disk kutusu soğutması ve fiyat/performans karşılaştırmaları.
+- Uyku/uyanma davranışı; dosya depolama uyumluluğu ile güvenilir macOS başlangıç diski kullanımının farkı.
+
+### Mevcut durum
+
+Bu, bir donanım araştırması çalışmasıdır. Bir disk kutusunun kağıt üzerindeki uyumluluğunu, kararlı bir harici macOS kurulumunun kanıtı olarak kabul etmiyorum.
+
+## Teknolojiler ve ilgi alanları
+
+- 🍎 **Apple uygulamaları:** Swift, SwiftUI, macOS, iOS, Apple Silicon
+- ☁️ **Bulut ve kendi sunucumda barındırma:** Docker, Docker Compose, File Browser, Tailscale, uzaktan erişim mimarisi
+- 🎞️ **Dosyalar ve medya:** HEIC, PDF, FFmpeg, görsel katmanları, ses oynatma, video zaman çizelgeleri
+- 🐧 **Sistemler:** Linux derleme ortamları, Android/LineageOS, recovery imajları
+- 🔧 **Donanım:** NVMe depolama, APFS, homelab, sorun giderme
+
+## Çalışma biçimim
+
+Kaynak değişiklikleri, arayüz iyileştirmeleri, derleme sorunlarını giderme, doğrulama ve proje dokümantasyonunda **Codex** ile birlikte çalışıyorum.
+
+Amacım günlük ihtiyaçları kullanışlı araçlara dönüştürmek, proje durumlarını doğru aktarmak ve süreçte öğrendiklerimi kaydetmek.
+
+Herkese açık depoların ve demoların bağlantıları ilgili bölümlerde bulunuyor. Diğer projeler üzerinde geliştirme ve paketleme çalışmaları sürüyor.
+
+[English ↓](#english)
+
+---
+
+<a id="english"></a>
+
 # Hi, I'm Arda 👋
 
 I build practical apps, creative tools, and personal cloud systems. My work spans the Apple ecosystem, cross-platform cloud development, self-hosting, and hardware experiments.
@@ -185,3 +382,5 @@ My aim is to turn everyday needs into useful tools, keep project status honest, 
 
 Public repositories and demos are linked where available. Other projects are still being developed and packaged.
 
+
+[Türkçe ↑](#turkce)
