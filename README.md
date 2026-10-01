@@ -17,6 +17,7 @@ Bu projeleri **Codex** desteğiyle geliştiriyor; kaynak kodunu, arayüzleri, de
 | 🎬 Kadrena | macOS, iPhone ve iPad için video düzenleme | Geliştirme derlemeleri |
 | 🎨 LumaStudio | macOS için katmanlı görsel düzenleme | Geliştirme derlemeleri |
 | 🎵 WAMP | Winamp'tan esinlenen yerel müzik oynatıcı | macOS derlemesi ve web sürümü |
+| 🐲 HyperDrive · Beast Core | Windows için dahili ve harici depolama hız testi | 1 GiB test; Windows geliştirme sürümü |
 | ☁️ Mac mini Personal Cloud | Kendi sunucumda depolama ve uzaktan dosya erişimi | Herkese açık kurulum rehberi ve betikler |
 | 💾 Harici macOS ve NVMe araştırması | Depolama, disk kutuları ve Mac uyumluluğu | Donanım araştırması |
 
@@ -109,6 +110,26 @@ macOS derlemesi **Apple Silicon ve Intel Mac'ler** için hazırlandı; dosya se�
 
 [Web oynatıcıyı aç](https://wamp-klasik-mp3-calar.sykenix.chatgpt.site)
 
+## 🐲 [HyperDrive · Beast Core](https://github.com/ardacob/hyperdrive-beast-core) — depolama hız testi
+
+**HyperDrive**, dahili disklerin, USB belleklerin ve harici disklerin sıralı okuma/yazma hızını ölçen **Windows** uygulamamdır. **C# ve WinForms** ile geliştirildi; CS2 Hyper Beast estetiğinden esinlenen özgün yaratık teması, nar çiçeği ve turkuaz vurgular kullanır.
+
+### Mevcut özellikler
+
+- Seçilen sürücüde **1 GiB** geçici veriyle sıralı yazma ve okuma testi.
+- Ayrı **MB/sn** sonuçları, ilerleme göstergesi ve testi durdurma.
+- Windows dosya önbelleğini atlayan erişim ve işlem sonunda geçici dosyanın temizlenmesi.
+- C: üzerinde yazılabilir test klasörü seçimi; normal test için yönetici izni gerektirmez.
+- Bahnschrift font ve özel çizilen, tamamen yuvarlak uçlu düğmeler.
+
+### Mevcut durum
+
+İlk Windows geliştirme sürümü **v0.1.0** hazır. Geliştirme sırasında C: üzerinde 1 GiB okuma/yazma ve dosya temizliği doğrulandı; düğmelerin hover, basılı ve devre dışı çizimleri kontrol edildi.
+
+Bu sürüm sıralı dosya aktarımını ölçer; SMART sağlık kontrolü, rastgele I/O ve gerçek kapasite doğrulaması içermez.
+
+[Kaynak kodu](https://github.com/ardacob/hyperdrive-beast-core) · [Windows indir](https://github.com/ardacob/hyperdrive-beast-core/releases/tag/v0.1.0) · [Değişiklikler](https://github.com/ardacob/hyperdrive-beast-core/blob/main/CHANGELOG.md)
+
 ## ☁️ Mac mini Personal Cloud — kendi sunucumda depolama
 
 [Mac mini Personal Cloud](https://github.com/ardacob/mac-mini-personal-cloud), aşağıdaki bileşenlerle kurulmuş gerçek bir kişisel bulut ve medya depolama sistemini belgeler:
@@ -153,6 +174,7 @@ Bu, bir donanım araştırması çalışmasıdır. Bir disk kutusunun kağıt ü
 
 ## Teknolojiler ve ilgi alanları
 
+- 🪟 **Windows uygulamaları:** C#, WinForms, depolama performansı, özel çizilen arayüzler
 - 🍎 **Apple uygulamaları:** Swift, SwiftUI, macOS, iOS, Apple Silicon
 - ☁️ **Bulut ve kendi sunucumda barındırma:** Docker, Docker Compose, File Browser, Tailscale, uzaktan erişim mimarisi
 - 🎞️ **Dosyalar ve medya:** HEIC, PDF, FFmpeg, görsel katmanları, ses oynatma, video zaman çizelgeleri
@@ -188,6 +210,7 @@ I develop these projects with help from **Codex**, iterating on source code, int
 | 🎬 Kadrena | Video editing for macOS, iPhone, and iPad | Development builds |
 | 🎨 LumaStudio | Layer-based image editing for macOS | Development builds |
 | 🎵 WAMP | Winamp-inspired local music player | macOS build and web version |
+| 🐲 HyperDrive · Beast Core | Windows internal/external storage benchmark | 1 GiB test; Windows development build |
 | ☁️ Mac mini Personal Cloud | Self-hosted storage and remote file access | Public setup guide and scripts |
 | 💾 External macOS & NVMe research | Storage, enclosures, and Mac compatibility | Hardware research |
 
@@ -280,6 +303,26 @@ The macOS build was prepared for **Apple Silicon and Intel Macs**, and file sele
 
 [Open the web player](https://wamp-klasik-mp3-calar.sykenix.chatgpt.site)
 
+## 🐲 [HyperDrive · Beast Core](https://github.com/ardacob/hyperdrive-beast-core) — storage benchmark
+
+**HyperDrive** is my **Windows** app for measuring sequential read/write speeds of internal drives, USB flash drives, and external storage. Built with **C# and WinForms**, it uses an original creature theme inspired by CS2 Hyper Beast, with coral red and turquoise accents.
+
+### Current features
+
+- A fixed **1 GiB** temporary-file sequential write/read test on the selected drive.
+- Separate decimal **MB/s** results, progress, and cancellation.
+- Windows file-cache bypass and temporary-file cleanup after the test.
+- Writable test-directory selection on C:, allowing a standard test without administrator rights.
+- Bahnschrift typography and fully rounded custom buttons.
+
+### Current status
+
+The first Windows development build, **v0.1.0**, is ready. A 1 GiB C: write/read test and file cleanup were verified during development; hover, pressed, and disabled button rendering was checked.
+
+This version measures sequential file throughput. It does not include SMART health checks, random I/O, or genuine-capacity validation.
+
+[Source code](https://github.com/ardacob/hyperdrive-beast-core) · [Windows download](https://github.com/ardacob/hyperdrive-beast-core/releases/tag/v0.1.0) · [Changelog](https://github.com/ardacob/hyperdrive-beast-core/blob/main/CHANGELOG.md)
+
 ## ☁️ Mac mini Personal Cloud — self-hosted storage
 
 [Mac mini Personal Cloud](https://github.com/ardacob/mac-mini-personal-cloud) documents a real personal cloud and media-storage setup using:
@@ -324,6 +367,7 @@ This is a hardware research track. A particular enclosure's compatibility on pap
 
 ## Technologies & interests
 
+- 🪟 **Windows apps:** C#, WinForms, storage performance, custom-drawn interfaces
 - 🍎 **Apple apps:** Swift, SwiftUI, macOS, iOS, Apple Silicon
 - ☁️ **Cloud & self-hosting:** Docker, Docker Compose, File Browser, Tailscale, remote-access architecture
 - 🎞️ **Files & media:** HEIC, PDF, FFmpeg, image layers, audio playback, video timelines
