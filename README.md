@@ -18,7 +18,6 @@ Bu projeleri **Codex** desteğiyle geliştiriyor; kaynak kodunu, arayüzleri, de
 | 🎨 LumaStudio | macOS için katmanlı görsel düzenleme | Geliştirme derlemeleri |
 | 🎵 WAMP | Winamp'tan esinlenen yerel müzik oynatıcı | macOS derlemesi ve web sürümü |
 | ☁️ Mac mini Personal Cloud | Kendi sunucumda depolama ve uzaktan dosya erişimi | Herkese açık kurulum rehberi ve betikler |
-| 📱 Galaxy C5 ROM | Android 9 / LineageOS 16 derlemesi | Derleme sürüyor; telefonda doğrulanmadı |
 | 💾 Harici macOS ve NVMe araştırması | Depolama, disk kutuları ve Mac uyumluluğu | Donanım araştırması |
 
 ## 🌙 Lunoud
@@ -136,27 +135,6 @@ NAStool'un kaynak projesi arşivlenmiştir; rehber bu bileşeni eski bir yazıl�
 
 [Depo ve Türkçe rehber](https://github.com/ardacob/mac-mini-personal-cloud) · [İngilizce rehber](https://github.com/ardacob/mac-mini-personal-cloud/blob/main/README_EN.md)
 
-## 📱 Galaxy C5 — özel Android ROM çalışması
-
-**Samsung Galaxy C5 SM-C5000** için **Android 9 / LineageOS 16** derlemesi üzerinde çalışıyorum.
-
-### Yapılan çalışmalar
-
-- Ubuntu tabanlı Android derleme ortamı hazırlama.
-- LineageOS, cihaz, kernel ve vendor kaynaklarını indirme ve belirli sürümlere sabitleme.
-- Eski Android derleme araçlarının uyumluluk sorunlarını çözme.
-- Aygıt ağacı derleyicisindeki sembol çakışmasını düzeltme.
-- Recovery imajının adres argümanlarını düzeltme.
-- Recovery imajı derleme; boyut, başlık ve adres yerleşimini kontrol etme.
-- Stok firmware'e dönüş paketi ve ortak depolama yedeği hazırlama.
-- Linux derleme ortamını Windows dizüstü bilgisayara taşıma hazırlığı.
-
-### Mevcut durum
-
-Recovery, derleme düzeyindeki kontrolleri geçti ancak **telefonda test edilmedi**. Tam ROM derlemesi devam ediyor; bootloader/firmware uyumluluğu henüz çözülmedi.
-
-Telefona özel recovery veya ROM yüklenmedi. Derleme doğrulaması, cihazın başarıyla açıldığı anlamına gelmez.
-
 ## 💾 Harici macOS ve NVMe — donanım araştırması
 
 Uygulamaların yanında **Mac mini** için pratik depolama kurulumlarını araştırıyorum. Buna **Crucial T500 NVMe SSD**, harici disk kutuları ve harici diskten macOS başlatma olasılığı da dahil.
@@ -211,7 +189,6 @@ I develop these projects with help from **Codex**, iterating on source code, int
 | 🎨 LumaStudio | Layer-based image editing for macOS | Development builds |
 | 🎵 WAMP | Winamp-inspired local music player | macOS build and web version |
 | ☁️ Mac mini Personal Cloud | Self-hosted storage and remote file access | Public setup guide and scripts |
-| 📱 Galaxy C5 ROM | Android 9 / LineageOS 16 build | Build in progress; no phone validation |
 | 💾 External macOS & NVMe research | Storage, enclosures, and Mac compatibility | Hardware research |
 
 ## 🌙 Lunoud
@@ -328,27 +305,6 @@ The repository includes Docker configuration examples, setup guides, and helper 
 NAStool is an archived upstream project, so the guide records it as a legacy component.
 
 [Repository & Turkish guide](https://github.com/ardacob/mac-mini-personal-cloud) · [English guide](https://github.com/ardacob/mac-mini-personal-cloud/blob/main/README_EN.md)
-
-## 📱 Galaxy C5 — custom Android ROM work
-
-I'm working on an **Android 9 / LineageOS 16** build for the **Samsung Galaxy C5 SM-C5000**.
-
-### Work carried out
-
-- Preparing an Ubuntu-based Android build environment.
-- Downloading and pinning the LineageOS, device, kernel, and vendor sources.
-- Resolving older Android build-tool compatibility issues.
-- Fixing a device-tree compiler symbol conflict.
-- Correcting recovery image address arguments.
-- Building a recovery image and checking its size, headers, and address layout.
-- Preparing a stock firmware return package and shared-storage backup.
-- Preparing a transfer of the Linux build environment to a Windows laptop.
-
-### Current status
-
-The recovery passed build-level checks, but it has **not been tested on the phone**. The full ROM build is still in progress, and bootloader/firmware compatibility remains unresolved.
-
-The phone has not been flashed with the custom recovery or ROM. Build validation is not a claim of successful device boot.
 
 ## 💾 External macOS & NVMe — hardware research
 
